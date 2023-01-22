@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "barber-shop-app",
+    "slug": "barber-shop-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "91626cfa-19a9-41a6-8865-79f24ab28eec"
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+TestResults
+**/bin/Debug/
+**/bin/Release/
+**/node_modules

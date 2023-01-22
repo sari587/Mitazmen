@@ -1,0 +1,18 @@
+export default {
+    appColorWhite: '#fff',
+    appColorBlack: '#000',
+    appColorLightBlue: '#4A90E2',
+    appColorDarkBlue: '#002447',
+    appColorGreyishBlue: '#77bef8',
+    appColorWhitishBlue: '#f3f9ff',
+    appColorGreyText: '#7c7b7a',
+    appColorPurpule:'#042c4e',
+    appColorLightGreen:'#c6ffd3',
+    appColorDarkGreen:'#189d36',
+    appColorLightYellow:'#fff2d2',
+    appColorDarkYellow:'#fca618',
+    appColorRed: '#f7594c',
+    appColorWhiteBlue: 'rgba(158,209,250,0.9)',
+    appColorTransparentWhite: 'rgba(250,250,250,0.5)',
+    appColorTransparentBlack: 'rgba(0,0,0,0.5)',
+}

@@ -1,0 +1,25 @@
+import colors from "./colors"
+export const labels = ["Choose Service", "Appointment", "Summary", "Payment",]
+export const customStyles = {
+    stepIndicatorSize: 25,
+    currentStepIndicatorSize: 30,
+    separatorStrokeWidth: 2,
+    currentStepStrokeWidth: 3,
+    stepStrokeCurrentColor: colors.appColorLightBlue,
+    stepStrokeWidth: 3,
+    stepStrokeFinishedColor: colors.appColorLightBlue,
+    stepStrokeUnFinishedColor: '#aaaaaa',
+    separatorFinishedColor: colors.appColorLightBlue,
+    separatorUnFinishedColor: '#aaaaaa',
+    stepIndicatorFinishedColor: colors.appColorLightBlue,
+    stepIndicatorUnFinishedColor: colors.appColorWhite,
+    stepIndicatorCurrentColor: colors.appColorWhite,
+    stepIndicatorLabelFontSize: 13,
+    currentStepIndicatorLabelFontSize: 13,
+    stepIndicatorLabelCurrentColor: colors.appColorLightBlue,
+    stepIndicatorLabelFinishedColor: colors.appColorWhite,
+    stepIndicatorLabelUnFinishedColor: '#aaaaaa',
+    labelColor: colors.appColorDarkBlue,
+    labelSize: 13,
+    currentStepLabelColor: colors.appColorDarkBlue,
+}

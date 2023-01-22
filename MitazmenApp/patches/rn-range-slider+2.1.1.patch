@@ -1,0 +1,14 @@
+diff --git a/node_modules/rn-range-slider/index.js b/node_modules/rn-range-slider/index.js
+index c054f07..568fee4 100644
+--- a/node_modules/rn-range-slider/index.js
++++ b/node_modules/rn-range-slider/index.js
+@@ -1,7 +1,7 @@
+ import React, { memo, useState, useEffect, useCallback, useMemo, useRef } from 'react';
+-import { Animated, PanResponder, View, ViewPropTypes } from 'react-native';
++import { Animated, PanResponder, View, } from 'react-native';
+ import PropTypes from 'prop-types';
+-
++import { ViewPropTypes } from 'deprecated-react-native-prop-types'
+ import styles from './styles';
+ import {useThumbFollower, useLowHigh, useWidthLayout, useLabelContainerProps, useSelectedRail} from './hooks';
+ import {clamp, getValueForPosition, isLowCloser} from './helpers';
