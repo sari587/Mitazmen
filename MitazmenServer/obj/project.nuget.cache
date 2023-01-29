@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xxcCfRrcTtgHloHBTpn25b0CD0cpBhuYoe7GPlwJb+LMeUxd0k5V2rO6KtyP5tRr/0M6wG+Vy8tOk1hp14OYcw==",
+  "dgSpecHash": "2QubOKhDszzBg16DsCdNFj26wPWNMOIbTd4AVTSPCVKgQc9lrQjA5zTMSc3VNy6cG/SneG6L97teoOCEAZ+WWA==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\Mitazmen\\MitazmenServer\\MitazmenServer.csproj",
+  "projectFilePath": "C:\\Projects\\Mitazmen\\Mitazmen\\MitazmenServer\\MitazmenServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abdallam\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\abdallam\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
@@ -29,6 +29,8 @@
     "C:\\Users\\abdallam\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\abdallam\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\6.0.0\\microsoft.extensions.options.configurationextensions.6.0.0.nupkg.sha512",
     "C:\\Users\\abdallam\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\abdallam\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\abdallam\\.nuget\\packages\\nlog\\5.1.1\\nlog.5.1.1.nupkg.sha512",
     "C:\\Users\\abdallam\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\abdallam\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\abdallam\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",

@@ -26,6 +26,19 @@
           }
         }
       },
+      "NLog/5.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.2.3": {
         "type": "package",
         "dependencies": {
@@ -136,6 +149,30 @@
         "microsoft.openapi.nuspec"
       ]
     },
+    "NLog/5.1.1": {
+      "sha512": "YBfUDzipCaucs+8ieCDp8XECumiWsQbZwSUVLlt9i7FGV03nOPqoVzLtmlhbTxq4TN92BBsLacqPAE/ZyDDJ1g==",
+      "type": "package",
+      "path": "nlog/5.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/net46/NLog.dll",
+        "lib/net46/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "nlog.5.1.1.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.2.3": {
       "sha512": "cnzQDn0Le+hInsw2SYwlOhOCPXpYi/szcvnyqZJ12v+QyrLBwAmWXBg6RIyHB18s/mLeywC+Rg2O9ndz0IUNYQ==",
       "type": "package",
@@ -220,6 +257,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "NLog >= 5.1.1",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -230,11 +268,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Mitazmen\\MitazmenREST\\MitazmenREST.csproj",
+      "projectUniqueName": "C:\\Projects\\Mitazmen\\Mitazmen\\MitazmenREST\\MitazmenREST.csproj",
       "projectName": "MitazmenREST",
-      "projectPath": "C:\\Projects\\Mitazmen\\MitazmenREST\\MitazmenREST.csproj",
+      "projectPath": "C:\\Projects\\Mitazmen\\Mitazmen\\MitazmenREST\\MitazmenREST.csproj",
       "packagesPath": "C:\\Users\\abdallam\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Mitazmen\\MitazmenREST\\obj\\",
+      "outputPath": "C:\\Projects\\Mitazmen\\Mitazmen\\MitazmenREST\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -270,6 +308,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "NLog": {
+            "target": "Package",
+            "version": "[5.1.1, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"

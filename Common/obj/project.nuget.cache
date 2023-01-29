@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PrQ+sF9CwqNwXp5EGWOBuiOez/NsYujcwyxUBJbD6Y3h47jpCkaY5o8WiuPpdYVP7RWH73LDtXqV48ISW2btFQ==",
+  "dgSpecHash": "H+E/jy2KnDg1vzyUXbjv4zH7UBOOCngSDniM9XQ0qdIoKJqa7q7UpjxT9p+VUb6nX8oW/pgOIsDyMt7EpXdFow==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\Mitazmen\\Common\\Common.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Projects\\Mitazmen\\Mitazmen\\Common\\Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\abdallam\\.nuget\\packages\\nlog\\5.1.1\\nlog.5.1.1.nupkg.sha512"
+  ],
   "logs": []
 }
