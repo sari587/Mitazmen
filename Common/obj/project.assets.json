@@ -49,23 +49,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\abdallam\\.nuget\\packages\\": {},
+    "C:\\Users\\pc\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Mitazmen\\Mitazmen\\Common\\Common.csproj",
+      "projectUniqueName": "C:\\Projects\\Mitazmen\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "C:\\Projects\\Mitazmen\\Mitazmen\\Common\\Common.csproj",
-      "packagesPath": "C:\\Users\\abdallam\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Mitazmen\\Mitazmen\\Common\\obj\\",
+      "projectPath": "C:\\Projects\\Mitazmen\\Common\\Common.csproj",
+      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\Mitazmen\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\abdallam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -74,10 +74,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "\\\\zfs2\\dev\\Zerto_nuget_repo": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://zartifacts.zerto.local:8443/artifactory/api/nuget/zerto_nuget_server": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -116,7 +113,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

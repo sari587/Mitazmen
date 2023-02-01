@@ -137,3 +137,12 @@ C:\Projects\Mitazmen\Mitazmen\MitazmenServer\obj\Debug\net6.0\refint\MitazmenSer
 C:\Projects\Mitazmen\Mitazmen\MitazmenServer\obj\Debug\net6.0\MitazmenServer.pdb
 C:\Projects\Mitazmen\Mitazmen\MitazmenServer\obj\Debug\net6.0\MitazmenServer.genruntimeconfig.cache
 C:\Projects\Mitazmen\Mitazmen\MitazmenServer\obj\Debug\net6.0\ref\MitazmenServer.dll
+C:\Projects\Mitazmen\MitazmenServer\bin\Debug\net6.0\nlog.config
+C:\Projects\Mitazmen\MitazmenServer\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Projects\Mitazmen\MitazmenServer\bin\Debug\net6.0\NLog.dll
+C:\Projects\Mitazmen\MitazmenServer\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Projects\Mitazmen\MitazmenServer\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Projects\Mitazmen\MitazmenServer\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Projects\Mitazmen\MitazmenServer\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Projects\Mitazmen\MitazmenServer\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Projects\Mitazmen\MitazmenServer\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

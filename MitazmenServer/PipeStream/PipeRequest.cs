@@ -13,9 +13,11 @@ namespace PipeStream
         public IPipeRequestData data;
         public enum Action
         {
-            GetAllJobs,
-            GetJobByID,
-            GetActiveJobs
+            GetUserDetails,
+            GetShopDetails,
+            GetShops,
+            GetAppointments,
+            GetAppointmentDetails
         }
 
         protected PipeRequest(IPipeRequestData data)
