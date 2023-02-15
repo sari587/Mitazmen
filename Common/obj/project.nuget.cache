@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "H+E/jy2KnDg1vzyUXbjv4zH7UBOOCngSDniM9XQ0qdIoKJqa7q7UpjxT9p+VUb6nX8oW/pgOIsDyMt7EpXdFow==",
+  "dgSpecHash": "0npwow8V3ONgxYr8mMk2OK8lZDWQWWJEiaxGDcCOnShz5PG6r4wpBOiA+GIRxMRdWgv6Jwfrh+y313F3kivRGA==",
   "success": true,
   "projectFilePath": "C:\\Projects\\Mitazmen\\Mitazmen\\Common\\Common.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\abdallam\\.nuget\\packages\\mstest.testframework\\3.0.2\\mstest.testframework.3.0.2.nupkg.sha512",
+    "C:\\Users\\abdallam\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\abdallam\\.nuget\\packages\\nlog\\5.1.1\\nlog.5.1.1.nupkg.sha512"
   ],
   "logs": []

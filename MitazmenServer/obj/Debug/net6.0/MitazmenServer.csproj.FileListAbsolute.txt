@@ -137,3 +137,5 @@ C:\Projects\Mitazmen\Mitazmen\MitazmenServer\obj\Debug\net6.0\refint\MitazmenSer
 C:\Projects\Mitazmen\Mitazmen\MitazmenServer\obj\Debug\net6.0\MitazmenServer.pdb
 C:\Projects\Mitazmen\Mitazmen\MitazmenServer\obj\Debug\net6.0\MitazmenServer.genruntimeconfig.cache
 C:\Projects\Mitazmen\Mitazmen\MitazmenServer\obj\Debug\net6.0\ref\MitazmenServer.dll
+C:\Projects\Mitazmen\Mitazmen\MitazmenServer\bin\Debug\net6.0\nlog.config
+C:\Projects\Mitazmen\Mitazmen\MitazmenServer\bin\Debug\net6.0\Newtonsoft.Json.dll
