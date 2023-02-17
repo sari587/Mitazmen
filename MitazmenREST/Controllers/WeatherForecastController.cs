@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using MitazmenREST.Entities;
 
 namespace MitazmenREST.Controllers
 {
