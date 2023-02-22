@@ -10,19 +10,6 @@ namespace Common
 {
     public class Appointment
     {
-        Appointment(int userId, int serviceProviderId, int serviceId, string? dateOfBirth, string? dateOfAppointment, string? appointmentDescreption, CommonEnum.AppointmentStatus appointmentStatus, CommonEnum.ServiceType appointmentServiceType)
-        {
-            _appointmentId = Guid.NewGuid().GetHashCode();
-            _userId = userId;
-            _serviceProviderId = serviceProviderId;
-            _serviceId = serviceId;
-            _dateOfBirth = dateOfBirth;
-            _dateOfAppointment = dateOfAppointment;
-            _appointmentDescreption = appointmentDescreption;
-            _appointmentStatus = appointmentStatus;
-            _appointmentServiceType = appointmentServiceType;
-        }
-
         private int _appointmentId
         {
             get { return _appointmentId; }
@@ -36,7 +23,22 @@ namespace Common
         private string? _appointmentDescreption { get; set; }
         private CommonEnum.AppointmentStatus _appointmentStatus { get; set; }
         private CommonEnum.ServiceType _appointmentServiceType { get; set; }
-        public string valuesToString()
+
+        public Appointment(int userId, int serviceProviderId, int serviceId, string? dateOfBirth, string? dateOfAppointment, string? appointmentDescreption, CommonEnum.AppointmentStatus appointmentStatus, CommonEnum.ServiceType appointmentServiceType)
+        {
+            _appointmentId = Guid.NewGuid().GetHashCode();
+            _userId = userId;
+            _serviceProviderId = serviceProviderId;
+            _serviceId = serviceId;
+            _dateOfBirth = dateOfBirth;
+            _dateOfAppointment = dateOfAppointment;
+            _appointmentDescreption = appointmentDescreption;
+            _appointmentStatus = appointmentStatus;
+            _appointmentServiceType = appointmentServiceType;
+        }
+
+
+        public string ValuesToString()
         {
             return $"'{_appointmentId}','{_appointmentDescreption}','{_dateOfAppointment}','{_appointmentServiceType}','{_appointmentStatus}','{_serviceProviderId}','{_serviceId}','{_userId}'";
         }

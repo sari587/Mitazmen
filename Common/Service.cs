@@ -9,7 +9,20 @@ namespace Common
 {
     public class Service
     {
-        Service(int serviceProviderId, string serviceDescription, string serviceTimePeriod, CommonEnum.ServiceType serviceType, CommonEnum.ServiceStatus serviceStatus, float price)
+        private int _serviceId
+        {
+            get { return this._serviceId; }
+            set => _serviceId = Guid.NewGuid().GetHashCode();
+        }
+        private int _serviceProviderId { get; set; }
+        private float _price { get; set; }
+        private string? _serviceDescription { get; set; }
+        private string? _serviceTimePeriod { get; set; }
+        private CommonEnum.ServiceType _serviceType { get; set; }
+        private CommonEnum.ServiceStatus _serviceStatus { get; set; }
+
+
+        public Service(int serviceProviderId, string serviceDescription, string serviceTimePeriod, CommonEnum.ServiceType serviceType, CommonEnum.ServiceStatus serviceStatus, float price)
         {
             _serviceId = Guid.NewGuid().GetHashCode();
             _serviceProviderId = serviceProviderId;
@@ -20,20 +33,9 @@ namespace Common
             _serviceType = serviceType;
 
         }
-        private int _serviceId
-        {
-            get { return this._serviceId; }
-            set => _serviceId = Guid.NewGuid().GetHashCode();
-        }
-        private int _serviceProviderId { get; set; }
-        private string? _serviceDescription { get; set; }
-        private string? _serviceTimePeriod { get; set; }
-        private CommonEnum.ServiceType _serviceType { get; set; }
-        private CommonEnum.ServiceStatus _serviceStatus { get; set; }
-        private float _price { get; set; }
+        
 
-
-        public string valuesToString()
+        public string ValuesToString()
         {
             return $"'{_serviceId}','{_serviceDescription}','{_serviceType}','{_serviceStatus}','{_price}','{_serviceTimePeriod}','{_serviceProviderId}'";
         }

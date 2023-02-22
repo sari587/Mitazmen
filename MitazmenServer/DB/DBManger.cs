@@ -15,54 +15,60 @@ namespace MitazmenServer.DB
         private static readonly Logger _log = LogManager.GetCurrentClassLogger();
         public bool InsertToTable(string tableName, Object data)
         {
+            if (data == null)
+            {
+                _log.Info(":: => data object at DBManger.InsertToTable() is null");
+                return false;
+            }
             switch (tableName)
             {
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
                 case CONSTANTS.APPOINTMENT:
                     Appointment? appointment = data as Appointment;
-                    return INSERT(CONSTANTS.APPOINTMENT, CONSTANTS.COL_APPOINTMENT, appointment.valuesToString());
-
+                
+                    return INSERT(CONSTANTS.APPOINTMENT, CONSTANTS.COL_APPOINTMENT, appointment.ValuesToString());
                 case CONSTANTS.IMAGE:
                     Common.Image? image = data as Common.Image;
-                    return INSERT(CONSTANTS.IMAGE, CONSTANTS.COL_IMAGE, image.valuesToString());
+                    return INSERT(CONSTANTS.IMAGE, CONSTANTS.COL_IMAGE, image.ValuesToString());
 
                 case CONSTANTS.LOCATION:
-                    Location? location = data as Location;
-                    return INSERT(CONSTANTS.LOCATION, CONSTANTS.COL_LOCATION, location.valuesToString());
+                    Location? location = data as Location;  
+                    return INSERT(CONSTANTS.LOCATION, CONSTANTS.COL_LOCATION, location.ValuesToString());
 
                 case CONSTANTS.MESSAGE:
                     Message? message = data as Message;
-                    return INSERT(CONSTANTS.MESSAGE, CONSTANTS.COL_MESSAGE, message.valuesToString());
+                    return INSERT(CONSTANTS.MESSAGE, CONSTANTS.COL_MESSAGE, message.ValuesToString());
 
                 case CONSTANTS.REVIEW:
                     Review? review = data as Review;
-                    return INSERT(CONSTANTS.REVIEW, CONSTANTS.COL_REVIEW, review.valuesToString());
+                    return INSERT(CONSTANTS.REVIEW, CONSTANTS.COL_REVIEW, review.ValuesToString());
 
                 case CONSTANTS.SERVICE:
                     Service? service = data as Service;
-                    return INSERT(CONSTANTS.SERVICE, CONSTANTS.COL_SERVICE, service.valuesToString());
+                    return INSERT(CONSTANTS.SERVICE, CONSTANTS.COL_SERVICE, service.ValuesToString());
 
                 case CONSTANTS.SERVICE_PROVIDER:
-                    Common.ServiceProvider ? serviceProvider = data as Common.ServiceProvider;
-                    return INSERT(CONSTANTS.SERVICE_PROVIDER, CONSTANTS.COL_SERVICE_PROVIDER, serviceProvider.valuesToString());
+                    Common.ServiceProvider? serviceProvider = data as Common.ServiceProvider;
+                    return INSERT(CONSTANTS.SERVICE_PROVIDER, CONSTANTS.COL_SERVICE_PROVIDER, serviceProvider.ValuesToString());
 
                 case CONSTANTS.SUGGESTED_SERVICES:
                     SuggestedServices? suggestedServices = data as SuggestedServices;
-                    return INSERT(CONSTANTS.SUGGESTED_SERVICES, CONSTANTS.COL_SUGGESTED_SERVICES, suggestedServices.valuesToString());
-                
+                    return INSERT(CONSTANTS.SUGGESTED_SERVICES, CONSTANTS.COL_SUGGESTED_SERVICES, suggestedServices.ValuesToString());
+
                 case CONSTANTS.USER:
                     User? user = data as User;
-                    return INSERT(CONSTANTS.USER, CONSTANTS.COL_USER, user.valuesToString());
-
+                    return INSERT(CONSTANTS.USER, CONSTANTS.COL_USER, user.ValuesToString());
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
+                default:
+                    _log.Info($":: => Table Name {tableName} is not configerd");
+                    break;
             }
             return false;
         }
-        public bool INSERT(string tableName, string[] columnList, string data)
+
+        public bool Execute(string SQLstatement,string tableName,string msg)
         {
             SqlConnection conn = new SqlConnection(CONSTANTS.sqlConnString);
-            string colListStr = string.Join(",", columnList);
-            string SQLstatement =
-                $"INSERT INTO {tableName} ({colListStr}) " +
-                $"VALUES ({data});";
             try
             {
                 if (conn.State == ConnectionState.Closed)
@@ -72,14 +78,13 @@ namespace MitazmenServer.DB
                 _log.Info(":: => Connection open");
                 SqlCommand sqlCommand = new SqlCommand(SQLstatement, conn);
                 sqlCommand.ExecuteNonQuery();
-                _log.Info($":: => Added new entry to \"{tableName}\" table Created");
+                _log.Info($":: => {msg}");
                 return true;
             }
             catch (Exception e)
             {
                 _log.Error(e.ToString());
-
-                _log.Info(":: => ! Failed to add entry");
+                _log.Info(":: => ! Failed to execute SQLstatement");
                 return false;
             }
             finally
@@ -89,18 +94,36 @@ namespace MitazmenServer.DB
             }
         }
 
-        public bool SELECT(string tableName)
+        public bool INSERT(string tableName, string[] columnList, string data)
         {
-            return false;
+            SqlConnection conn = new SqlConnection(CONSTANTS.sqlConnString);
+            string SQLstatement =
+                $"INSERT INTO {tableName} ({string.Join(",", columnList)}) " +
+                $"VALUES ({data});";
+
+            return Execute(SQLstatement, tableName, $"Added new entry to \"{tableName}\"");
         }
 
-        public bool UPDATE(string tableName)
+       /* public T? SELECT<T>(string qury)
         {
-            return false;
+            return ;
+        }*/
+
+        public bool UPDATE(string tableName, string setOfColumns, string condition)
+        {
+            string SQLstatement =
+                $"UPDATE {tableName} " +
+                $"SET {setOfColumns}" +
+                $"WHERE {condition};";
+            return Execute(SQLstatement,tableName,$"Updated \"{tableName}\"");
         }
-        public bool DELETE(string tableName)
+        public bool DELETE(string tableName,string condition)
         {
-            return false;
+            string SQLstatement =
+                $"DELETE FROM {tableName} " +
+                $"{condition};";
+            return Execute(SQLstatement, tableName, $"Deleted entrys from \"{tableName}\"");
+
         }
     }
 }

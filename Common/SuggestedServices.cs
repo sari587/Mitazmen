@@ -9,7 +9,18 @@ namespace Common
 {
     public class SuggestedServices
     {
-        SuggestedServices(float averageRate, CommonEnum.SuggestedServicesGroup suggestedServicesGroup, CommonEnum.ServiceType suggestedServiceType, string? suggestedServicesDescription)
+
+        private int _suggestedServicesId
+        {
+            get { return this._suggestedServicesId; }
+            set => _suggestedServicesId = Guid.NewGuid().GetHashCode();
+        }
+        private float _averageRate { get; set; }
+        private string? _suggestedServicesDescription { get; set; }
+        private CommonEnum.SuggestedServicesGroup _suggestedServicesGroup { get; set; }
+        private CommonEnum.ServiceType _suggestedServiceType { get; set; }
+
+        public SuggestedServices(float averageRate, CommonEnum.SuggestedServicesGroup suggestedServicesGroup, CommonEnum.ServiceType suggestedServiceType, string? suggestedServicesDescription)
         {
             _suggestedServicesId = Guid.NewGuid().GetHashCode();
             _averageRate = averageRate;
@@ -18,17 +29,7 @@ namespace Common
             _suggestedServicesDescription = suggestedServicesDescription;
         }
 
-        private int _suggestedServicesId
-        {
-            get { return this._suggestedServicesId; }
-            set => _suggestedServicesId = Guid.NewGuid().GetHashCode();
-        }
-        private float _averageRate { get; set; }
-        private CommonEnum.SuggestedServicesGroup _suggestedServicesGroup { get; set; }
-        private CommonEnum.ServiceType _suggestedServiceType { get; set; }
-        private string? _suggestedServicesDescription { get; set; }
-
-        public string valuesToString()
+        public string ValuesToString()
         {
             return $"'{_suggestedServicesId}','{_suggestedServicesGroup}','{_suggestedServiceType}','{_suggestedServicesDescription}','{_averageRate}'";
         }

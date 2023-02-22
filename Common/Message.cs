@@ -8,16 +8,6 @@ namespace Common
 {
     public class Message
     {
-         Message(int senderId, int receiverId, CommonEnum.msgStatus msgStatus, string? message, string? msgDate)
-        {
-            _msgId = Guid.NewGuid().GetHashCode();
-            _senderId = senderId;
-            _receiverId = receiverId;
-            _msgStatus = msgStatus;
-            _message = message;
-            _msgDate = msgDate;
-        }
-
         private int _msgId
         {
             get { return _msgId; }
@@ -29,9 +19,20 @@ namespace Common
         private string? _message { get; set; }
         private string? _msgDate { get; set; }
 
-        public string valuesToString()
+        Message(int senderId, int receiverId, CommonEnum.msgStatus msgStatus, string? message, string? msgDate)
         {
-            return $"'{_msgId}','{_message}','{_msgDate}','{_msgStatus}','{._senderId}','{_receiverId}'";
+            _msgId = Guid.NewGuid().GetHashCode();
+            _senderId = senderId;
+            _receiverId = receiverId;
+            _msgStatus = msgStatus;
+            _message = message;
+            _msgDate = msgDate;
+        }
+
+        
+        public string ValuesToString()
+        {
+            return $"'{_msgId}','{_message}','{_msgDate}','{_msgStatus}','{_senderId}','{_receiverId}'";
         }
     }
 }

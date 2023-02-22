@@ -8,18 +8,6 @@ namespace Common
 {
     public class Review
     {
-        Review(int userId, int serviceProviderId, int serviceId, float rating, string? msg, string? date, CommonEnum.ServiceType serviceType)
-        {
-            _reviewId = Guid.NewGuid().GetHashCode();
-            _userId = userId;
-            _serviceProviderId = serviceProviderId;
-            _serviceId = serviceId;
-            _rating = rating;
-            _msg = msg;
-            _date = date;
-            _serviceType = serviceType;
-        }
-
         private int _reviewId
         {
             get { return _reviewId; }
@@ -33,8 +21,21 @@ namespace Common
         private string? _date { get; set; }
         private CommonEnum.ServiceType _serviceType { get; set; }
 
+        Review(int userId, int serviceProviderId, int serviceId, float rating, string? msg, string? date, CommonEnum.ServiceType serviceType)
+        {
+            _reviewId = Guid.NewGuid().GetHashCode();
+            _userId = userId;
+            _serviceProviderId = serviceProviderId;
+            _serviceId = serviceId;
+            _rating = rating;
+            _msg = msg;
+            _date = date;
+            _serviceType = serviceType;
+        }
 
-        public string valuesToString()
+       
+
+        public string ValuesToString()
         {
             return $"'{_reviewId}','{_msg}','{_rating}','{_date}','{_serviceType}','{_serviceProviderId}','{_userId}','{_serviceId}'";
         }

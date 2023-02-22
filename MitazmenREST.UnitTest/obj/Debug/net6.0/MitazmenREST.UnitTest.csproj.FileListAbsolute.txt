@@ -97,3 +97,4 @@ C:\Projects\Mitazmen\MitazmenREST.UnitTest\obj\Debug\net6.0\refint\MitazmenREST.
 C:\Projects\Mitazmen\MitazmenREST.UnitTest\obj\Debug\net6.0\MitazmenREST.UnitTest.pdb
 C:\Projects\Mitazmen\MitazmenREST.UnitTest\obj\Debug\net6.0\MitazmenREST.UnitTest.genruntimeconfig.cache
 C:\Projects\Mitazmen\MitazmenREST.UnitTest\obj\Debug\net6.0\ref\MitazmenREST.UnitTest.dll
+C:\Projects\Mitazmen\MitazmenREST.UnitTest\bin\Debug\net6.0\NLog.dll

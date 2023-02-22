@@ -1,6 +1,12 @@
-﻿namespace Common
+﻿using static System.Net.Mime.MediaTypeNames;
+using System.Reflection;
+using MitazmenServer.DB;
+using System.Linq;
+
+namespace Common
 {
-    public class User
+    [Serializable]
+    public class User 
     {
         User(string firstName, string lastName, string email, string password, int phoneNumber, CommonEnum.UserType type, CommonEnum.UserStatus status, int serviceProviderId, int locationId)
         {
@@ -40,9 +46,24 @@
         private string ? _password { get; set; }
         private int _serviceProviderId { get; set; }
         private int _locationId { get; set; }
-        public string valuesToString()
+        public string ValuesToString()
         {
             return $"'{this._UserId}','{this._phoneNumber}','{this._email}','{this._password}','{this._firstName}','{this._lastName}','{this._userType}','{this._userStatus}','{this._locationId}','{this._serviceProviderId}'";
+        }
+
+        public Dictionary<string, string> GetInsertQurey()
+        {
+            string query,parmters = "";
+            Dictionary<string, string> properties = new Dictionary<string, string>();
+            foreach (PropertyInfo prop in this.GetType().GetProperties())
+            {
+                properties.Add(prop.Name, prop?.GetValue(this)?.ToString() ?? "");
+                
+            }
+            string str = $"INSERT INTO {this.GetType()} ('{String.Join("','", properties.Keys)}') " +
+                $"VALUES ('{String.Join("','", properties.Values)}');";
+
+            return properties;
         }
     }
 }

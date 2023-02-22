@@ -10,10 +10,11 @@ namespace MitazmenServer.DB
     {
         #region MySqlRegion
 
-        public const string mySqlUserName = "root";
+        /*public const string mySqlUserName = "root";
         public const string mySqlPassword = "Sa208343970";
         public const string databaseName = "mitazmendb";
-        public const string sqlConnString = $"server=localhost;user id={mySqlUserName};password={mySqlPassword};database={databaseName}";
+        public const string sqlConnString1 = $"server=localhost;user id={mySqlUserName};password={mySqlPassword};database={databaseName}";*/
+        public const string sqlConnString = @"Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;";
 
         #endregion
 

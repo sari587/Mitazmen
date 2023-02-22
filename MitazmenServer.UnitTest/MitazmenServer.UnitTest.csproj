@@ -16,4 +16,8 @@
     <PackageReference Include="NLog" Version="5.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MitazmenServer\MitazmenServer.csproj" />
+  </ItemGroup>
+
 </Project>

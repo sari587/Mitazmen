@@ -30,3 +30,4 @@ C:\Projects\Mitazmen\MitazmenREST\obj\Debug\net6.0\refint\MitazmenREST.dll
 C:\Projects\Mitazmen\MitazmenREST\obj\Debug\net6.0\MitazmenREST.pdb
 C:\Projects\Mitazmen\MitazmenREST\obj\Debug\net6.0\MitazmenREST.genruntimeconfig.cache
 C:\Projects\Mitazmen\MitazmenREST\obj\Debug\net6.0\ref\MitazmenREST.dll
+C:\Projects\Mitazmen\MitazmenREST\bin\Debug\net6.0\NLog.dll

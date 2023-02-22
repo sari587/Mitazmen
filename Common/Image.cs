@@ -23,7 +23,7 @@ namespace Common
         private int _holderId { get; set; }
         private string _imageBase64 { get; set; }
 
-        public string valuesToString()
+        public string ValuesToString()
         {
             return $"'{_imageId}','{_holderId}','{_imageBase64}'";
         }
