@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "jaAOBgnCs88kD0fNZ7FVddl3+kiG4ofmNObPcCw6C2j+ynV9kVV8GFC8mrUA6uNrlqzPbIAYcdPXFgsSIk4tUw==",
+  "dgSpecHash": "0npwow8V3ONgxYr8mMk2OK8lZDWQWWJEiaxGDcCOnShz5PG6r4wpBOiA+GIRxMRdWgv6Jwfrh+y313F3kivRGA==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\Mitazmen\\Common\\Common.csproj",
+  "projectFilePath": "C:\\Projects\\Mitazmen\\Mitazmen\\Common\\Common.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\pc\\.nuget\\packages\\nlog\\5.1.1\\nlog.5.1.1.nupkg.sha512"
+    "C:\\Users\\abdallam\\.nuget\\packages\\mstest.testframework\\3.0.2\\mstest.testframework.3.0.2.nupkg.sha512",
+    "C:\\Users\\abdallam\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\abdallam\\.nuget\\packages\\nlog\\5.1.1\\nlog.5.1.1.nupkg.sha512"
   ],
   "logs": []
 }

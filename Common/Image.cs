@@ -8,12 +8,6 @@ namespace Common
 {
     public class Image
     {
-        Image(int serviceId, string imageBase64)
-        {
-            _imageId = Guid.NewGuid().GetHashCode();
-            _holderId = serviceId;
-            _imageBase64 = imageBase64;
-        }
         private int _imageId
         {
             get { return _imageId; }
@@ -22,6 +16,13 @@ namespace Common
         }
         private int _holderId { get; set; }
         private string _imageBase64 { get; set; }
+
+        public Image(int serviceId, string imageBase64)
+        {
+            _imageId = Guid.NewGuid().GetHashCode();
+            _holderId = serviceId;
+            _imageBase64 = imageBase64;
+        }
 
         public string ValuesToString()
         {

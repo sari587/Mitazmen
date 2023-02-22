@@ -19,7 +19,7 @@ namespace Common
         private string? _message { get; set; }
         private string? _msgDate { get; set; }
 
-        Message(int senderId, int receiverId, CommonEnum.msgStatus msgStatus, string? message, string? msgDate)
+        public Message(int senderId, int receiverId, CommonEnum.msgStatus msgStatus, string? message, string? msgDate)
         {
             _msgId = Guid.NewGuid().GetHashCode();
             _senderId = senderId;

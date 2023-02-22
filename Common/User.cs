@@ -8,29 +8,6 @@ namespace Common
     [Serializable]
     public class User 
     {
-        User(string firstName, string lastName, string email, string password, int phoneNumber, CommonEnum.UserType type, CommonEnum.UserStatus status, int serviceProviderId, int locationId)
-        {
-            _UserId = Guid.NewGuid().GetHashCode();
-            _firstName = firstName;
-            _lastName = lastName;
-            _email = email;
-            _password = password;
-            _phoneNumber = phoneNumber;
-            _userType = type;
-            _userStatus = status;
-            _locationId = locationId;
-            _serviceProviderId = serviceProviderId;
-        }
-        User(string firstName, string email, string password, int phoneNumber, CommonEnum.UserType type)
-        {
-            _UserId = Guid.NewGuid().GetHashCode();
-            _firstName = firstName;
-            _lastName = "";
-            _email = email;
-            _password = password;
-            _phoneNumber = phoneNumber;
-            _userType = type;
-        }
 
         private int _UserId
         {
@@ -46,6 +23,31 @@ namespace Common
         private string ? _password { get; set; }
         private int _serviceProviderId { get; set; }
         private int _locationId { get; set; }
+
+        public User(string firstName, string lastName, string email, string password, int phoneNumber, CommonEnum.UserType type, CommonEnum.UserStatus status, int serviceProviderId, int locationId)
+        {
+            _UserId = Guid.NewGuid().GetHashCode();
+            _firstName = firstName;
+            _lastName = lastName;
+            _email = email;
+            _password = password;
+            _phoneNumber = phoneNumber;
+            _userType = type;
+            _userStatus = status;
+            _locationId = locationId;
+            _serviceProviderId = serviceProviderId;
+        }
+        public User(string firstName, string email, string password, int phoneNumber, CommonEnum.UserType type)
+        {
+            _UserId = Guid.NewGuid().GetHashCode();
+            _firstName = firstName;
+            _lastName = "";
+            _email = email;
+            _password = password;
+            _phoneNumber = phoneNumber;
+            _userType = type;
+        }
+
         public string ValuesToString()
         {
             return $"'{this._UserId}','{this._phoneNumber}','{this._email}','{this._password}','{this._firstName}','{this._lastName}','{this._userType}','{this._userStatus}','{this._locationId}','{this._serviceProviderId}'";

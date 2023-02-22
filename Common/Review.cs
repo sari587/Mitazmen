@@ -21,7 +21,7 @@ namespace Common
         private string? _date { get; set; }
         private CommonEnum.ServiceType _serviceType { get; set; }
 
-        Review(int userId, int serviceProviderId, int serviceId, float rating, string? msg, string? date, CommonEnum.ServiceType serviceType)
+        public Review(int userId, int serviceProviderId, int serviceId, float rating, string? msg, string? date, CommonEnum.ServiceType serviceType)
         {
             _reviewId = Guid.NewGuid().GetHashCode();
             _userId = userId;
