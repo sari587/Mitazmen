@@ -1,6 +1,7 @@
 TestResults
-**/bin/
-**/obj/
+.vs
+**/bin
+**/obj
 **/bin/Debug/
 **/bin/Release/
 **/node_modules
