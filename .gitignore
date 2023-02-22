@@ -1,4 +1,5 @@
 TestResults
+.vs
 **/bin/
 **/obj/
 **/bin/Debug/
