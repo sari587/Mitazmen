@@ -1,3 +1,7 @@
 TestResults
 .vs
+**/bin
+**/obj
+**/bin/Debug/
+**/bin/Release/
 **/node_modules
