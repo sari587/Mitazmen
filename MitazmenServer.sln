@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MitazmenREST.UnitTest", "Mi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{03261BB7-7425-4C8E-A96E-FA40C2BC40D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.UnitTest", "Common.UnitTest\Common.UnitTest.csproj", "{F61F0F10-2EE0-43A1-A398-499AD493C923}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.UnitTest", "Common.UnitTest\Common.UnitTest.csproj", "{F61F0F10-2EE0-43A1-A398-499AD493C923}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockAPI", "MockAPI\MockAPI.csproj", "{8EB0A64B-278B-4C7F-92FA-66663B422C2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{F61F0F10-2EE0-43A1-A398-499AD493C923}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F61F0F10-2EE0-43A1-A398-499AD493C923}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F61F0F10-2EE0-43A1-A398-499AD493C923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB0A64B-278B-4C7F-92FA-66663B422C2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB0A64B-278B-4C7F-92FA-66663B422C2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB0A64B-278B-4C7F-92FA-66663B422C2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB0A64B-278B-4C7F-92FA-66663B422C2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
