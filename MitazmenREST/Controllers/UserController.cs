@@ -36,7 +36,7 @@ namespace MitazmenREST.Controllers
         }
 
         [HttpPatch(Name = "UpdateUser")]
-        public StatusCodeResult DeleteUser(int userId, string username)
+        public StatusCodeResult UpdateUser(int userId, string username)
         {
             currentUsers[userId].username = username;
             return Ok();
